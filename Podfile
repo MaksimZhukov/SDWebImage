@@ -2,12 +2,12 @@ use_frameworks!
 
 def all_example_pods
   pod 'SDWebImage/MapKit', :path => './'
-  pod 'SDWebImageWebPCoder', :git => 'https://github.com/SDWebImage/SDWebImageWebPCoder.git', :branch => 'master'
+  pod 'SDWebImageWebPCoder', '0.14.5'
 end
 
 def watch_example_pods
   pod 'SDWebImage/Core', :path => './'
-  pod 'SDWebImageWebPCoder', :git => 'https://github.com/SDWebImage/SDWebImageWebPCoder.git', :branch => 'master'
+  pod 'SDWebImageWebPCoder', '0.14.5'
 end
 
 def vision_example_pods
