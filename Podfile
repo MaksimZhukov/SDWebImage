@@ -12,7 +12,7 @@ end
 
 def vision_example_pods
   pod 'SDWebImage/MapKit', :path => './'
-  pod 'SDWebImageSwiftUI', :git => 'https://github.com/SDWebImage/SDWebImageSwiftUI.git', :branch => 'master'
+  pod 'SDWebImageSwiftUI', '3.0.1'
 end
 
 def all_test_pods
