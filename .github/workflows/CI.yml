@@ -1,12 +1,7 @@
 name: "SDWebImage CI"
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - '*'
+  workflow_dispatch:
 
 permissions:
   contents: read
