@@ -9,9 +9,9 @@ permissions:
 jobs:
   Lint:
     name: Cocoapods Lint
-    runs-on: macos-14
+    runs-on: macos-12
     env:
-      DEVELOPER_DIR: /Applications/Xcode_15.2.app
+      DEVELOPER_DIR: /Applications/Xcode_14.2.app
     steps:
       - name: Checkout
         uses: actions/checkout@v3
