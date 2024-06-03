@@ -9,12 +9,21 @@ permissions:
 jobs:
   Lint:
     name: Cocoapods Lint
-    runs-on: macos-12
+    runs-on: macos-14
     env:
-      DEVELOPER_DIR: /Applications/Xcode_14.2.app
+      DEVELOPER_DIR: /Applications/Xcode_15.2.app
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Version of Ruby gem
+        run: gem -v
+
+      - name: Downgrade Ruby gem
+        run: sudo gem update --system 3.5.4
+
+      - name: Version of Ruby gem
+        run: gem -v
 
       - name: Install Cocoapods
         run: gem install cocoapods --no-document --quiet
